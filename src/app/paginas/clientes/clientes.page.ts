@@ -11,8 +11,8 @@ import { Cliente } from '../../modelos/Cliente';
 export class ClientesPage {
 
   clientes: Cliente[] = [];
-  textoBuscar: string = '';
-  titulo: string = 'Clientes';
+  textoBuscar = '';
+  titulo = 'Clientes';
 
   constructor( private clientesService: ClientesService,
                 private alertController: AlertController,
@@ -78,7 +78,6 @@ export class ClientesPage {
           }
         ]
       });
-  
       await alert.present();
     }
 }
